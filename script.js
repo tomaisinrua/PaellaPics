@@ -1,12 +1,15 @@
+var slideIndex = 1;
+
 function openModal() {
     document.getElementById("myModal").style.display = "block";
+    document.body.classList.add('modal-open'); 
 }
 
 function closeModal() {
     document.getElementById("myModal").style.display = "none";
+    document.body.classList.remove('modal-open'); 
 }
 
-var slideIndex = 1;
 function currentSlide(n) {
     showSlides(slideIndex = n);
 }
